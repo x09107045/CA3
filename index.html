@@ -5,96 +5,190 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Transbod Bluetooth App</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/kwicks-slider.css" type="text/css" media="screen">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="screen">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
+		
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/superfish.js"></script>
+		<script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+		<script type="text/javascript" src="js/touchTouch.jquery.js"></script>
+		<script type="text/javascript">if($(window).width()>1024){document.write("<"+"script src='js/jquery.preloader.js'></"+"script>");}	</script>
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script>		
+			 jQuery(window).load(function() {	
+			 $x = $(window).width();		
+		if($x > 1024)
+		{			
+		jQuery("#content .row").preloader();    }	
+			 
+		 jQuery('.magnifier').touchTouch();			
+		jQuery('.spinner').animate({'opacity':0},1000,'easeOutCubic',function (){jQuery(this).css('display','none')});	
+			  }); 
+					
+		</script>
+			<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
-    <body>
+	<body>
+    <div class="spinner"></div> 
+    
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Aisling Roche - x09107045 - NCIRL - ARIA CA3 - 2014</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-                                  
-          </form>
-        </div><!--/.navbar-collapse -->
+<header>
+      <div class="container clearfix">
+    <div class="row">
+          <div class="span12">
+        <div class="navbar navbar_">
+              <div class="container">
+            <h1 class="brand brand_"><a href="index.html"><img alt="" src="img/logo.png"> </a></h1>
+            <a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">Menu <span class="icon-bar"></span> </a>
+            <div class="nav-collapse nav-collapse_  collapse">
+                  <ul class="nav sf-menu">
+                <li class="active"><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+                <li class="sub-menu"><a href="motivate.html">Motivate</a>
+                      <ul>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="bmi.html">Calculate BMI</a></li>
+                  </ul>
+                    </li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+                </div>
+          </div>
+            </div>
       </div>
-    </div>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+        </div>
+  </div>
+    </header>
+	
+	
+	<div class="bg-content">
       <div class="container">
-        <h1>Transbod</h1><h1 class="brand brand_"><a href="index.html"><img alt="" src="img/logo.png"> </a></h1>
-        <p>Welcome to Transbod, the Bluetooth Android Weight Application to help you monitor and track your weight loss progress. Learn about the Android app and the new iPhone version coming soon. <br>
+    <div class="row">
+          <div class="span12">
+		   <div class="flexslider">
+            <ul class="slides">
+            <li> <img src="img/slide-5.jpg" alt="" > </li>
+            <li> <img src="img/slide-3.jpg" alt="" > </li>
+			<li> <img src="img/slide-5.jpg" alt="" > </li>
+            <li> <img src="img/slide-3.jpg" alt="" > </li>
+			<li> <img src="img/slide-5.jpg" alt="" > </li>
+            
+            </ul>
+            </div>
+        <span id="responsiveFlag"></span>
+        <div class="block-slogan">
+              <h2>Welcome!</h2>
+              <div>
+            <p>Welcome to Transbod, the Bluetooth Android Weight Application to help you monitor and track your weight loss progress. Learn about the Android app and the new iPhone version coming soon. <br>
 				This site is developed to promote the application and its features and to allow you learn about it and to gain some motivational tips for your new healthy lifestyle, weight loss and fitness journey.
 			<br>
+			<div class="span4">
+                  <div class="thumbnail thumbnail-1">
+                <h3>Buy the Bluetooth Scales</h3>
+                <img  src="img/scales.jpg" alt="Scales">
+                <section> <strong>Bluetooth Scales</strong>
+                      <p>Download the App & Purchase the Bluetooth scales to use with the Transbod Android app. Coming soon to iOS.</p>
+                      <form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_xclick">
+				<input type="hidden" name="business" value="me@mybusiness.com">
+				<input type="hidden" name="currency_code" value="Euro">
+				<input type="hidden" name="item_name" value="Weighing Scales">
+				<input type="hidden" name="amount" value="72.99">
+				<input type="image" src="http://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+				</form>
+				</section>
+              </div>
+                </div>
 			<iframe width="230"   height="165" frameborder="0" scrolling="no" src="http://iheartquotes.com/api/v1/random?format=html&max_lines=4&max_characters=320&width=225&height=165">
 				<a href="http://iheartquotes.com/fortune/random">Random Quote</a></iframe>  
 			</p>
+			<p>			
+		  <div class="span3"><img src="img/playstore.png" alt="Playstore">
+		  <br>
+		  <p>Download the Transbod from the Playstore now</p>
+		  </div>
+		  <div class="span3"><img src="img/appstore.png" alt="Playstore">
+		  <br
+		  <p>Coming soon to the AppStore, please check back again soon! </p>
+		  </div>
+		  </p>
+          </div>
+            </div>
       </div>
-    </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-            <li class="span4">
-                 
+        </div>
+  </div>
+    
+   <div id="content" class="content-extra">
+    <div class="row-1">
+          <div class="container">
+        <div class="row">
+              <ul class="thumbnails thumbnails-1">
+            <li class="span3">
+                 <div class="thumbnail thumbnail-1">
                 <h3>Recipes</h3>
                 <img  src="img/healthyfood.jpg" alt="Food">
                 <section> <strong>Find healthy recipes</strong>
                       <p>Healthy recipes to help you on your weight loss journey.</p>
                       <a href="recipes.html" class="btn btn-1">Read More</a> </section>
-             </li>
-            <li class="span4">
-                  
+              </div>
+                </li>
+            <li class="span3">
+                  <div class="thumbnail thumbnail-1">
                 <h3>Fitness Videos</h3>
                 <img  src="img/fitness.jpg" alt="Fitness">
                 <section> <strong>Fitness Videos</strong>
                       <p>Fitness videos to help you get the body you want</p>
+					  <br/>
                       <a href="videos.html" class="btn btn-1">Watch Videos</a> </section>
-              
+              </div>
                 </li>
-            <li class="span4">
-                  <h3>Body Mass Index</h3>
+            <li class="span3">
+                  <div class="thumbnail thumbnail-1">
+                <h3>Body Mass Index</h3>
                 <img  src="img/scales.jpg" alt="Scales">
                 <section> <strong>BMI Calculator</strong>
                       <p>Determine your body mass index with our easy to use calculator.</p>
                       <a href="bmi.html" class="btn btn-1">BMI Calculator</a> </section>
-            </li>
+              </div>
+                </li>
+			
             
           </ul>
+            </div>
       </div>
-
+        </div>
       <hr>
 
-      <footer>
-        <p>Aisling Roche - x09107045 - NCIRL 2014</p>
-      </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <div id="footer">
+	  <div class="container clearfix">
+		<ul class="list-social pull-right">
+          <li><a class="icon-1" href="https://www.facebook.com/kelley.walsh.71?fref=ts"></a></li>
+          <li><a class="icon-3" href="https://twitter.com/AislingRochey"></a></li>
+          <li><a class="icon-4" href="https://plus.google.com/u/0/"></a></li>
+        </ul>
+		<div class="privacy pull-left">Aisling Roche - x09107045 NCIRL 2014</div>
+	</div>
+        
+      </div>
+    </div> <!-- /container -->        
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
