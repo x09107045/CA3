@@ -237,12 +237,14 @@ font-weight:bold;
 h2 {
   font-size: 50px;
   line-height: 52px;
+color: green;
 }
 h3 {
   font-size: 30px;
   line-height: 34px;
   margin: 32px 0 15px;
   font-weight: normal;
+color: green;
 }
 .content-extra h3 {
   margin: 42px 0 25px;
@@ -288,6 +290,7 @@ p {
 .block-slogan p {
   border-left: 1px solid #454545;
   padding: 0 0 0 26px;
+text-color: black;
 }
 .block-slogan div {
   overflow: hidden;
@@ -581,18 +584,18 @@ p {
   overflow: hidden;
 }
 .address-1 strong {
-  color: #7f7f7f;
+  color: black;
   display: block;
   font-weight: normal;
 }
 .address-1 span {
   display: inline-block;
   width: 80px;
-  color: #ffffff;
+  color: black;
 }
 .mail-1 {
   text-decoration: underline;
-  color: #e85356;
+  color: black;
 }
 .mail-1:hover {
   text-decoration: none;
@@ -601,7 +604,7 @@ p {
   text-align: right;
 }
 .mail-2 a {
-  color: #3c3c3c;
+  color: black;
 }
 .mail-2 a:hover {
   text-decoration: underline;

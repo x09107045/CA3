@@ -23,7 +23,21 @@
 	<script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>	  
 	<script type="text/javascript" src="js/touchTouch.jquery.js"></script>
-	<script type="text/javascript" src="js/camera.js"></script>
+	<script type="text/javascript">if($(window).width()>1024){document.write("<"+"script src='js/jquery.preloader.js'></"+"script>");}	</script>
+
+		<script>		
+			 jQuery(window).load(function() {	
+			 $x = $(window).width();		
+		if($x > 1024)
+		{			
+		jQuery("#content .row").preloader();    }	
+			 
+		 jQuery('.magnifier').touchTouch();			
+		jQuery('.spinner').animate({'opacity':0},1000,'easeOutCubic',function (){jQuery(this).css('display','none')});	
+			  }); 
+					
+		</script>
+			<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	
 	
 
@@ -98,7 +112,7 @@
           </li>
               <li class="span4">
             <div class="thumbnail thumbnail-1"> <img  src="img/menu.png" alt="Menu">
-                  <section> <
+                  <section> 
                 <p>The menu presented to the user following registering or on login.</p>
               </section>
                 </div>
@@ -129,6 +143,7 @@
   </div>
     </div>
 	</div>
+	
     <hr>
  <!--============================== footer =================================-->
 <div id="footer">
