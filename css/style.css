@@ -219,7 +219,7 @@ h4,
 h5,
 h6 {
   text-transform: none;
-  color: black;
+  color: green;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   letter-spacing: -1px;
@@ -993,7 +993,7 @@ footer {
   .navbar_ .btn {
     display: inline-block;
     float: right;
-    background: #e85356;
+    background: green;
     padding: 18px 0 20px;
     text-decoration: none;
     margin: 0;
@@ -1014,7 +1014,7 @@ footer {
     position: relative;
   }
   .navbar_ .btn:hover {
-    background: #181818;
+    background: blue;
     color: #ffffff;
   }
   .navbar_ .btn .icon-bar {
@@ -1076,7 +1076,7 @@ footer {
   .nav-collapse_ .nav > li.active > a:hover {
     text-decoration: none;
     color: #ffffff;
-    background: #e85356;
+    background: green;
   }
   .sub-menu > a {
     position: relative;
